@@ -14,6 +14,8 @@
 		3D068E1128EB2E3D0084BF8C /* BraindanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D068E1028EB2E3D0084BF8C /* BraindanceTests.swift */; };
 		3D068E1B28EB2E3D0084BF8C /* BraindanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D068E1A28EB2E3D0084BF8C /* BraindanceUITests.swift */; };
 		3D068E1D28EB2E3D0084BF8C /* BraindanceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D068E1C28EB2E3D0084BF8C /* BraindanceUITestsLaunchTests.swift */; };
+		3D847B8D28EF2FF90088A7D7 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D847B8C28EF2FF90088A7D7 /* Card.swift */; };
+		3D847B9028EF31AA0088A7D7 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D847B8F28EF31AA0088A7D7 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		3D068E1628EB2E3D0084BF8C /* BraindanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BraindanceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D068E1A28EB2E3D0084BF8C /* BraindanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BraindanceUITests.swift; sourceTree = "<group>"; };
 		3D068E1C28EB2E3D0084BF8C /* BraindanceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BraindanceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3D847B8C28EF2FF90088A7D7 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		3D847B8F28EF31AA0088A7D7 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				3D068DFF28EB2E3C0084BF8C /* BraindanceApp.swift */,
+				3D847B8E28EF31870088A7D7 /* Components */,
 				3D2B16AE28EB38B200F6EF42 /* Data */,
 				3D2B16AF28EB38BA00F6EF42 /* Extensions */,
 				3D2B16B228EB38C900F6EF42 /* Models */,
@@ -164,6 +169,7 @@
 		3D2B16B228EB38C900F6EF42 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3D847B8C28EF2FF90088A7D7 /* Card.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -173,6 +179,14 @@
 			children = (
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		3D847B8E28EF31870088A7D7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3D847B8F28EF31AA0088A7D7 /* CardView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,6 +320,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D068E0228EB2E3C0084BF8C /* ContentView.swift in Sources */,
+				3D847B8D28EF2FF90088A7D7 /* Card.swift in Sources */,
+				3D847B9028EF31AA0088A7D7 /* CardView.swift in Sources */,
 				3D068E0028EB2E3C0084BF8C /* BraindanceApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,7 +488,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -501,7 +517,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
