@@ -16,6 +16,7 @@
 		3D068E1D28EB2E3D0084BF8C /* BraindanceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D068E1C28EB2E3D0084BF8C /* BraindanceUITestsLaunchTests.swift */; };
 		3D847B8D28EF2FF90088A7D7 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D847B8C28EF2FF90088A7D7 /* Card.swift */; };
 		3D847B9028EF31AA0088A7D7 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D847B8F28EF31AA0088A7D7 /* CardView.swift */; };
+		3D847B9228EF356A0088A7D7 /* StackedViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D847B9128EF356A0088A7D7 /* StackedViewModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		3D068E1C28EB2E3D0084BF8C /* BraindanceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BraindanceUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3D847B8C28EF2FF90088A7D7 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		3D847B8F28EF31AA0088A7D7 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		3D847B9128EF356A0088A7D7 /* StackedViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackedViewModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 		3D2B16AF28EB38BA00F6EF42 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				3D847B9128EF356A0088A7D7 /* StackedViewModifier.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D847B9228EF356A0088A7D7 /* StackedViewModifier.swift in Sources */,
 				3D068E0228EB2E3C0084BF8C /* ContentView.swift in Sources */,
 				3D847B8D28EF2FF90088A7D7 /* Card.swift in Sources */,
 				3D847B9028EF31AA0088A7D7 /* CardView.swift in Sources */,
