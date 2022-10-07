@@ -17,6 +17,8 @@
 		3D847B8D28EF2FF90088A7D7 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D847B8C28EF2FF90088A7D7 /* Card.swift */; };
 		3D847B9028EF31AA0088A7D7 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D847B8F28EF31AA0088A7D7 /* CardView.swift */; };
 		3D847B9228EF356A0088A7D7 /* StackedViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D847B9128EF356A0088A7D7 /* StackedViewModifier.swift */; };
+		3DBF9BC628F055F400709B83 /* EditCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBF9BC528F055F400709B83 /* EditCardsView.swift */; };
+		3DBF9BC828F05BA000709B83 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBF9BC728F05BA000709B83 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		3D847B8C28EF2FF90088A7D7 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		3D847B8F28EF31AA0088A7D7 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		3D847B9128EF356A0088A7D7 /* StackedViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackedViewModifier.swift; sourceTree = "<group>"; };
+		3DBF9BC528F055F400709B83 /* EditCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCardsView.swift; sourceTree = "<group>"; };
+		3DBF9BC728F05BA000709B83 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +146,7 @@
 		3D2B16AE28EB38B200F6EF42 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				3DBF9BC728F05BA000709B83 /* Constants.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -158,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				3D068E0128EB2E3C0084BF8C /* ContentView.swift */,
+				3DBF9BC528F055F400709B83 /* EditCardsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -322,9 +328,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DBF9BC628F055F400709B83 /* EditCardsView.swift in Sources */,
 				3D847B9228EF356A0088A7D7 /* StackedViewModifier.swift in Sources */,
 				3D068E0228EB2E3C0084BF8C /* ContentView.swift in Sources */,
 				3D847B8D28EF2FF90088A7D7 /* Card.swift in Sources */,
+				3DBF9BC828F05BA000709B83 /* Constants.swift in Sources */,
 				3D847B9028EF31AA0088A7D7 /* CardView.swift in Sources */,
 				3D068E0028EB2E3C0084BF8C /* BraindanceApp.swift in Sources */,
 			);

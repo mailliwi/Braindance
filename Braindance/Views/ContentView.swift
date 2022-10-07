@@ -13,9 +13,10 @@ struct ContentView: View {
     @Environment(\.accessibilityVoiceOverEnabled) var voiceOverEnabled
     @Environment(\.scenePhase) var scenePhase
     
-    @State private var cards = [Card](repeating: Card.example, count: 10)
+    @State private var cards = [Card]()
     @State private var timeRemaining = 90
     @State private var isSceneActive = true
+    @State private var isShowingEditScreen = false
     
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
@@ -28,9 +29,17 @@ struct ContentView: View {
     }
     
     func resetCards() {
-        cards = [Card](repeating: Card.example, count: 10)
         timeRemaining = 90
         isSceneActive = true
+        loadData()
+    }
+    
+    func loadData() {
+        if let data = UserDefaults.standard.data(forKey: Constants.cardsKey) {
+            if let decoded = try? JSONDecoder().decode([Card].self, from: data) {
+                cards = decoded
+            }
+        }
     }
     
     var body: some View {
@@ -75,11 +84,27 @@ struct ContentView: View {
                             .background(.white)
                             .foregroundColor(.black)
                             .clipShape(Capsule())
-                    }
-                    
-                    
+                    }  
                 }
             }
+            
+            VStack {
+                HStack {
+                    Spacer()
+                    Button {
+                        isShowingEditScreen = true
+                    } label: {
+                        Image(systemName: "plus.circle")
+                            .padding()
+                            .background(.black.opacity(0.7))
+                            .clipShape(Circle())
+                    }
+                }
+                Spacer()
+            }
+            .foregroundColor(.white)
+            .font(.largeTitle)
+            .padding()
             
             if differentiateWithoutColor || voiceOverEnabled {
                 VStack {
@@ -135,6 +160,8 @@ struct ContentView: View {
                 isSceneActive = false
             }
         }
+        .sheet(isPresented: $isShowingEditScreen, onDismiss: resetCards, content: EditCardsView.init)
+        .onAppear(perform: resetCards)
     }
 }
 
